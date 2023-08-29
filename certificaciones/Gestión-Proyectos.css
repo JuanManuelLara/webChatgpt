@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Video de fondo */
+  #video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Estilos para el contenido */
+  #contenido {
+    margin: 20px;
+  }
+  
+  /* Título */
+  #contenido .titulo {
+    font-size: 46px;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  /* Dividir en tres columnas */
+  #Gestión-Proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 60%);
+    grid-gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin: 20px;
+  }
+  
+  /* Etiquetas h3 */
+    h3 {
+      color: #000000;
+      font-size: 20px;
+      
+    }
+    
+    /* Enlaces "Leer más" */
+    a {
+      color: rgb(73, 189, 88);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+  #botones-contenedor {
+    text-align: right;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 55px;
+    margin-right: 0px;
+  }
+  
+  /* Estilos para los botones */
+  .boton-enlace {
+    display: block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 500px;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-enlace:hover {
+    background-color: #0056b3;
+  }
+  
+  .boton-enlace h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    pointer-events: none;
+  }
+  

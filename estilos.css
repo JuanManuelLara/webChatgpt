@@ -1,0 +1,155 @@
+    /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: #f0f0f0; /* Color de fondo neutro */
+}
+
+/* Estilos para el video de fondo */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  #video-fondo {
+    display: none;
+  }
+
+  .mobile-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Calligraphy", cursive;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .foto-redonda {
+    display: none;
+  }
+
+  .mobile-social {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Estilos para el contenedor principal que utiliza flexbox */
+#contenedor-flex {
+  display: flex;
+}
+
+/* Estilos adicionales */
+header {
+  background-color: transparent;
+  padding: 10vh;
+  text-align: center;
+}
+
+header h1 {
+  color: hwb(0 19% 7%);
+  margin-top: 0; 
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: -1vh; /* Ajusta el valor según el espacio deseado */
+}
+
+#foto-presentacion {
+  margin-left: 375px; /* Margen en la parte izquierda */
+  margin-top: 100px; /* Ajustamos el margen superior a 0 para mover la foto hacia arriba */
+  width: 100%; /* Ajusta el tamaño de la foto al 50% del ancho de la pantalla */
+
+
+}
+
+.imagen-principal {
+  width: 70%;
+  height:105%;
+  object-fit: cover; 
+}
+
+#texto-presentacion {
+  margin-left: -70px; /* Margen en la parte izquierda */
+  margin-top: 100px; /* Ajustamos el margen superior a 0 para mover la foto hacia arriba */
+  width: 100%; /* Ajusta el ancho del texto al 50% de la pantalla */
+  height:105%;
+  padding: 20px; /* Ajusta el espacio interior del contenedor del texto */
+  box-sizing: border-box; /* Hace que el padding se incluya en el ancho del elemento */
+  background-color: #f0f0f0; /* Color de fondo neutro */
+  
+}
+
+#botones-contenedor {
+  text-align: left; /* Alinea los botones a la izquierda */
+  margin-top: -190px; /* Ajusta la distancia desde la parte superior */
+  margin-left: 970px; /* Ajusta la distancia desde el margen izquierdo */
+  display: flex;
+  align-items: flex-start;
+}
+
+.boton-enlace {
+  display: block;
+  margin-left: 10px; /* Espacio entre los botones */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 500px;
+  transition: background-color 0.3s;
+}
+
+.boton-enlace h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#redes-sociales {
+  position: absolute;
+  top: 20px; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  /* Resto de estilos */
+}
+
+footer {
+  color: hsl(0, 0%, 9%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+}

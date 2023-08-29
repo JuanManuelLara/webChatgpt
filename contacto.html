@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="contacto.css">
+  <link rel="icon" type="image/png" href="imagenes/favicon.png.ico">
+</head>
+
+<style>
+  /* Estilos adicionales para el formulario de contacto */
+  .formulario-contacto {
+    position: absolute;
+    top: 500%; /* Ajusta esta propiedad para cambiar la posición vertical */
+    left: 18%; /* Ajusta esta propiedad para cambiar la posición horizontal */
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    padding: 20px;
+    border-radius: 50px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+    z-index: 1;
+  }
+
+  /* Estilos específicos para los campos del formulario */
+  .formulario-contacto label,
+  .formulario-contacto input,
+  .formulario-contacto textarea,
+  .formulario-contacto button {
+    display: block;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+
+<body>
+  <video autoplay loop muted id="video-fondo">
+    <source src="videos/fondo_video_contacto.mp4" type="video/mp4">
+    <source src="videos/fondo_video_contacto.webm" type="video/webm">
+    <source src="videos/fondo_video_contacto.ogg" type="video/ogg">
+    Tu navegador no soporta el elemento de video.
+  </video>
+
+  <div id="botones-contenedor">
+    <a class="boton-enlace" href="index.html"><h2>Inicio</h2></a>
+    <a class="boton-enlace" href="sobre-mi.html"><h2>Sobre mí</h2></a>
+    <a class="boton-enlace" href="proyectos.html"><h2>Proyectos</h2></a>
+    <a class="boton-enlace" href="formacion.html"><h2>Formación</h2></a>
+    <a class="boton-enlace" href="certificaciones.html"><h2>Certificaciones</h2></a>
+    <a class="boton-enlace" href="contacto.html"><h2>Contacto</h2></a>
+  </div>
+
+  <div class="imagen-contacto-container">
+    <!-- Imagen de contacto -->
+    <div class="formulario-contacto">
+      <h2>Formulario de Contacto</h2>
+      <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre y Apellidos</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        <label for="privacidad">Acepto la política de privacidad</label>
+        
+        <button type="submit">Enviar</button>
+      </form>
+      <a href="Politicas de Privacidad/politica-privacidad.html">Leer políticas de privacidad</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 - Todos los derechos reservados</p>
+  </footer>
+
+  <img src="imagenes/Contacto.png" alt="Imagen de contacto" class="imagen-contacto">
+
+ 
+</body>
+
+</html>

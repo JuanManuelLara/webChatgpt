@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0px;
+  overflow-y: hidden;
+}
+
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: -1vh;
+  /* Ajusta el valor según el espacio deseado */
+}
+
+#imagen-contenedor {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagen-principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#botones-contenedor {
+  text-align: right;
+  /* Alinear los botones a la derecha */
+  margin-top: 5vh;
+  /* Ajusta el valor según el espacio deseado */
+  display: flex;
+  align-items: flex-start;
+  /* Alinea los botones hacia arriba */
+}
+
+.boton-enlace {
+  display: block;
+  margin-left: 10px;
+  /* Espacio entre los botones */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 500px;
+  transition: background-color 0.3s;
+}
+
+.boton-enlace:hover {
+  background-color: #0056b3;
+}
+
+.boton-enlace h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#contenido {
+  margin: 40px 1000px 100px 40px;
+}
+
+#contenido .titulo {
+  font-size: 34px; /* Tamaño de fuente del título */
+  color:#af4042; /* Color del título */
+  font-weight: bold;
+}
+
+#contenido .parrafo {
+  font-size: 18px; /* Tamaño de fuente del contenido */
+  color: #007bff;
+  font-weight: bold;
+}
+
+footer {
+  color: hsl(0, 0%, 13%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  pointer-events: none;
+  /* Evita el desplazamiento del cursor */
+}

@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0px;
+    overflow-y: hidden;
+  }
+  
+  #video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  #proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -20px;
+  }
+  
+  #imagen-contenedor {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .imagen-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #contenido {
+    margin: 20px;
+  }
+  
+  #contenido .titulo {
+    font-size: 34px; /* Tamaño de fuente del título */
+    color:#af4042; /* Color del título */
+    font-weight: bold;
+  }
+  
+  #contenido .parrafo {
+    font-size: 18px; /* Tamaño de fuente del contenido */
+    color: hwb(0 96% 0%);
+    font-weight: bold;
+  }
+  
+  
+  #detalle-proyectos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .detalle-item {
+    margin-bottom: 20px;
+    color: hwb(0 96%3%);
+  
+   
+  }
+  
+  .detalle-item h3 {
+    font-size: 18px;
+  }
+  
+  .detalle-item p {
+    font-size: 14px; 
+  }
+
+  /* Enlaces "Leer más" */
+a {
+  color: rgb(158, 149, 149);
+  font-weight: bold;
+  text-decoration: none;
+}
+  
+  #botones-contenedor {
+    text-align: right;
+    /* Alinear los botones a la derecha */
+    margin-top: 5vh;
+    /* Ajusta el valor según el espacio deseado */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 55px; /* Ajusta el valor para subir los botones */
+    margin-right: 0px; /* Ajusta el valor para desplazar los botones hacia la derecha */
+  }
+  
+  
+  .boton-enlace {
+    display: block;
+    margin-left: 10px;
+    /* Espacio entre los botones */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 500px;
+    transition: background-color 0.3s;
+    }
+  
+  .boton-enlace:hover {
+    background-color: #0056b3;
+  }
+
+  .boton-enlace h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  footer {
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    pointer-events: none;
+  }
+  
